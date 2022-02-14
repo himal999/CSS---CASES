@@ -2,6 +2,7 @@ section{
     position: absolute;
     height: 50%;
     width: 50%;
+    font-size: 16px;
 }
 
 section:first-child{
@@ -28,4 +29,63 @@ section:nth-child(4){
     background-color: pink;
     bottom: 0;
     right: 0;
+}
+
+div{
+    background-color: white;
+    position: absolute;
+    width: 8em;
+    height: 8em;
+}
+
+
+section:first-child>div:first-child{
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 50em;
+
+}
+
+
+section:first-child>div:nth-child(2){
+    top:0px;
+    right: 0px;
+    border-bottom-left-radius: 50em;
+}
+
+section:nth-child(2)>div:first-child{
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 50em;
+}
+
+section:nth-child(2)>div:nth-child(2){
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 50em;
+}
+
+
+section:nth-child(3)>div:first-child{
+    bottom: 0;
+    left: 0;
+    border-top-right-radius: 50em;
+}
+
+section:nth-child(3)>div:nth-child(2){
+    bottom:  0;
+    right: 0;
+    border-top-left-radius: 50em;
+}
+
+section:nth-child(4)>div:first-child{
+    bottom: 0;
+    left: 0;
+    border-top-right-radius: 50em;
+}
+
+section:nth-child(4)>div:nth-child(2){
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 50em;
 }
