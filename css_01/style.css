@@ -1,14 +1,16 @@
 section{
     position: absolute;
-    height: 50%;
-    width: 50%;
+    height: 50vh;
+    width: 50vw;
     font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 section:first-child{
     background-color: red;
-    height: 50%;
-    width: 50%;
+  
     top: 0px;
     left: 0px;
 }
@@ -88,4 +90,30 @@ section:nth-child(4)>div:nth-child(2){
     bottom: 0;
     right: 0;
     border-top-left-radius: 50em;
+}
+
+.nv{
+    height: 10em;
+    width: 10em;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+   
+}
+
+section:first-child>nav,section:nth-child(2)>nav,section:nth-child(3)>nav,section:nth-child(4)>nav{
+  
+    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+   
+}
+
+section:nth-child(1)>nav>div,section:nth-child(2)>nav>div,section:nth-child(3)>nav>div,section:nth-child(4)>nav>div{
+    background-color: red;
+    width: 4vw;
+    height: 6vh;
+    position: relative;
 }
