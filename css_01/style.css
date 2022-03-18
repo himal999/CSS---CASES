@@ -6,6 +6,7 @@ section{
     justify-content: center;
     align-items: center;
     display: flex;
+    z-index: -1;
 }
 
 section:first-child{
@@ -116,4 +117,24 @@ section:nth-child(1)>nav>div,section:nth-child(2)>nav>div,section:nth-child(3)>n
     width: 4vw;
     height: 6vh;
     position: relative;
+}
+
+main{
+    width:15vw;
+    height: 15vh;
+    position: absolute;
+    display: flex;
+    top:410px;
+    left:790px;
+    z-index: 1;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+main>div{
+    background-color: red;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
 }
